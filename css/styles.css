@@ -1,12 +1,5 @@
 /* Estilos globales */
-/* body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f4f8;
-   
-    color: #333;
-} */
+
 body {
     background-image: url('../img/rm222batch4-mind-17.jpg'); /* Ruta de la imagen de fondo */
     background-size: cover; /* Asegura que la imagen cubra todo el fondo */
@@ -15,11 +8,11 @@ body {
     font-family: 'Roboto', sans-serif; /* Tipografía */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 header {
-    /* background-color: #0047ab; */
+    
     background-color: #0d0d0e;
-    /* color: white; */
     font-family: 'Bauhaus 93', sans-serif;
     color: rgb(7, 118, 192);
     padding: 20px;
@@ -43,9 +36,8 @@ header p {
 nav {
     display: flex;
     justify-content: center;
-    /* background-color: #003a8c; */
     background: linear-gradient(to right, rgba(243, 243, 245, 0), #0e4eca);
-     /* background-color: #0e4eca; */
+    
 }
 nav a {
     color: white;
@@ -208,14 +200,13 @@ footer a:hover {
 
 
 .image-container {
-    display: flex; /* Usar flexbox para mostrar imágenes en fila */
-    justify-content: center; /* Centrar las imágenes horizontalmente */
-    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan en pantallas pequeñas */
+    display: flex;              /* Usar flexbox para mostrar imágenes en fila */
+    justify-content: center;    /* Centrar las imágenes horizontalmente */
+    flex-wrap: wrap;            /* Permitir que las imágenes se envuelvan en pantallas pequeñas */
 }
 
 .image-container img {
     width: 110px; /* Ancho de las imágenes */
-    /*height: auto; /* Mantener la proporción de las imágenes */
     height: 65; /* Mantener la proporción de las imágenes */
     margin: 10px; /* Espaciado entre las imágenes */
     border-radius: 8px; /* Esquinas redondeadas */
