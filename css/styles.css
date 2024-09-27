@@ -1,0 +1,227 @@
+/* Estilos globales */
+/* body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+   
+    color: #333;
+} */
+body {
+    background-image: url('../img/rm222batch4-mind-17.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en la página */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    font-family: 'Roboto', sans-serif; /* Tipografía */
+    margin: 0;
+    padding: 0;
+}
+header {
+    /* background-color: #0047ab; */
+    background-color: #0d0d0e;
+    /* color: white; */
+    font-family: 'Bauhaus 93', sans-serif;
+    color: rgb(7, 118, 192);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+header img {
+    height: 120px;
+}
+header h1 {
+    margin: 0;
+    font-size: 4.5em;
+}
+header p {
+    margin: 5px 0;
+    font-style: italic;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    /* background-color: #003a8c; */
+    background: linear-gradient(to right, rgba(243, 243, 245, 0), #0e4eca);
+     /* background-color: #0e4eca; */
+}
+nav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: #002d6b;
+}
+section {
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.service-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+.service-box img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+footer {
+    /* background-color: #003a8c; */
+    background-color: #0d0d0e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+.contact-form button {
+    background-color: #0047ab;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #003a8c;
+}
+.service-detail {
+    margin-top: 50px;
+}
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-box {
+        width: 100%;
+    }
+}
+
+/* Estilo para la sección de Desarrollo de Software con imagen */
+.service-detail .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.service-detail .text {
+    width: 60%;
+}
+
+.service-detail .image {
+    width: 35%;
+}
+
+.service-detail .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .service-detail .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-detail .text, .service-detail .image {
+        width: 100%;
+    }
+}
+
+/* Estilo para la sección de Análisis de Datos con imagen a la izquierda */
+.service-detail .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.service-detail .text {
+    width: 60%;
+}
+
+.service-detail .image {
+    width: 35%;
+}
+
+.service-detail .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .service-detail .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-detail .text, .service-detail .image {
+        width: 100%;
+    }
+}
+
+.image-gallery {
+    text-align: center; /* Centrar el texto */
+    padding: 40px 20px; /* Espaciado alrededor de la sección */
+}
+.image-gallery h2 {
+    text-align: left; /* Alinear el texto a la izquierda */
+    margin-left: 20px; /* Puedes ajustar el margen según necesites */
+}
+
+
+.image-container {
+    display: flex; /* Usar flexbox para mostrar imágenes en fila */
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan en pantallas pequeñas */
+}
+
+.image-container img {
+    width: 110px; /* Ancho de las imágenes */
+    /*height: auto; /* Mantener la proporción de las imágenes */
+    height: 65; /* Mantener la proporción de las imágenes */
+    margin: 10px; /* Espaciado entre las imágenes */
+    border-radius: 8px; /* Esquinas redondeadas */
+    transition: transform 0.3s; /* Añadir un efecto al hacer hover */
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
