@@ -166,6 +166,8 @@ footer a:hover {
 
 .service-detail .text {
     width: 60%;
+    
+    
 }
 
 .service-detail .image {
@@ -195,7 +197,10 @@ footer a:hover {
 }
 .image-gallery h2 {
     text-align: left; /* Alinear el texto a la izquierda */
-    margin-left: 20px; /* Puedes ajustar el margen según necesites */
+    margin-left: 0 px; /* Puedes ajustar el margen según necesites */
+    color : rgb(7, 118, 192);
+ 
+
 }
 
 
@@ -215,4 +220,44 @@ footer a:hover {
 
 .image-container img:hover {
     transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+/* Seccion de tecnologia  */
+
+#tecnologias .text {
+    text-align: justify;
+}
+
+/* Seccion de partners  */
+
+#partners .text {
+    text-align: justify;
+}
+
+
+
+/* Estilos opcionales para la imagen */
+.image-container {
+    display: flex;
+    gap: 10px; /* Espacio entre imágenes */
+    justify-content: center;
+    flex-wrap: wrap; /* Para ajustar imágenes en diferentes líneas si es necesario */
+}
+
+.image-container img {
+    max-width: 100px; /* Ajustar el tamaño de las imágenes */
+    height: auto;
+}
+
+/*Este es el color del strong en los texto */
+.highlight {
+    color: rgb(7, 118, 192); /* Cambia el valor a cualquier color que prefieras */
+    font-family: 'Bauhaus 93', sans-serif; /* Cambia 'Arial' a la fuente que prefieras */
+}
+
+/*Este es el color del strong en los texto */
+.subtitulos {
+    color: rgb(7, 118, 192); /* Cambia el valor a cualquier color que prefieras */
+    font-family: 'Bauhaus 93', sans-serif; /* Cambia 'Arial' a la fuente que prefieras */
+    font-size: 33px;
 }
